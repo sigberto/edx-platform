@@ -205,6 +205,9 @@ FEATURES = {
     # basis in Studio)
     'ENABLE_CHAT': False,
 
+    # Enable "Simplified Sequential Navigation"
+    'ENABLE_SIMPLIFIED_SEQUENTIAL_NAV': False,
+
     # Allow users to enroll with methods other than just honor code certificates
     'MULTIPLE_ENROLLMENT_ROLES': False,
 

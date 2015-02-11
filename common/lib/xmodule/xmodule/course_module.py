@@ -292,7 +292,12 @@ class CourseFields(object):
         default=False,
         scope=Scope.settings
     )
-
+    simplified_sequential_nav = Boolean(
+        display_name=_("Display Simplified Sequential Navigation"),
+        help=_("Enter true or false. If true, the course display a simpler sequential 'filmstrip' navigation."),
+        default=False,
+        scope=Scope.settings
+    )
     no_grade = Boolean(
         display_name=_("Course Not Graded"),
         help=_("Enter true or false. If true, the course will not be graded."),

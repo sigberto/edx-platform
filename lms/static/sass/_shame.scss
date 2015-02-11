@@ -278,3 +278,15 @@ footer .references {
 .course-content .discussion-post.edit-post-form .topic-submenu {
   list-style: none;
 }
+
+.simplified-nav {
+    font-size: 1.25em;
+
+    &.sequence-nav {
+        margin: 0 0 10px 0;
+    }
+
+    &.sequence-bottom {
+        margin: 10px 0 0 0;
+    }
+}
