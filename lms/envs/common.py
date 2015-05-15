@@ -310,6 +310,8 @@ FEATURES = {
 
     # Enable display of enrollment counts in instructor and legacy analytics dashboard
     'DISPLAY_ANALYTICS_ENROLLMENTS': True,
+
+    'DISABLE_COURSE_CREATION': True,
 }
 
 # Ignore static asset files on import which match this pattern
