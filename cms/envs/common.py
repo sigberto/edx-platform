@@ -73,7 +73,7 @@ FEATURES = {
     'ENABLE_CREATOR_GROUP': False,
 
     # whether to use password policy enforcement or not
-    'ENFORCE_PASSWORD_POLICY': False,
+    'ENFORCE_PASSWORD_POLICY': True,
 
     # If set to True, Studio won't restrict the set of advanced components
     # to just those pre-approved by edX
