@@ -2008,3 +2008,5 @@ DISPLAY_COURSE_TILES = True
 
  # Set to True for systems where students are auto-registered on login
 DISABLE_REGISTER_BUTTON = False
+
+BYPASS_ACTIVATION_EMAIL_FOR_EXTAUTH = True
