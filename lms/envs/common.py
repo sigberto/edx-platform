@@ -313,6 +313,8 @@ FEATURES = {
     'DISPLAY_ANALYTICS_ENROLLMENTS': True,
 
     'DISABLE_COURSE_CREATION': True,
+
+    'BYPASS_ACTIVATION_EMAIL_FOR_EXTAUTH': True,
 }
 
 # Ignore static asset files on import which match this pattern
@@ -2008,5 +2010,3 @@ DISPLAY_COURSE_TILES = True
 
  # Set to True for systems where students are auto-registered on login
 DISABLE_REGISTER_BUTTON = False
-
-BYPASS_ACTIVATION_EMAIL_FOR_EXTAUTH = True
