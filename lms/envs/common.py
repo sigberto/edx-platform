@@ -122,7 +122,7 @@ FEATURES = {
 
     # This flag disables the requirement of having to agree to the TOS for users registering
     # with Shib.  Feature was requested by Stanford's office of general counsel
-    'SHIB_DISABLE_TOS': False,
+    'SHIB_DISABLE_TOS': True,
 
     # Toggles OAuth2 authentication provider
     'ENABLE_OAUTH2_PROVIDER': True,
