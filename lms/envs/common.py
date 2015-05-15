@@ -706,7 +706,8 @@ STATICFILES_DIRS = [
 FAVICON_PATH = 'images/favicon.ico'
 
 # Locale/Internationalization
-TIME_ZONE = 'America/New_York'  # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
+# http://en.wikipedia.org/wiki/List_of_tz_zones_by_name
+TIME_ZONE = 'US/Pacific'
 LANGUAGE_CODE = 'en'  # http://www.i18nguy.com/unicode/language-identifiers.html
 # these languages display right to left
 LANGUAGES_BIDI = ("en@rtl", "he", "ar", "fa", "ur", "fa-ir")
@@ -1703,7 +1704,7 @@ MAX_FAILED_LOGIN_ATTEMPTS_LOCKOUT_PERIOD_SECS = 15 * 60
 
 
 ##### LMS DEADLINE DISPLAY TIME_ZONE #######
-TIME_ZONE_DISPLAYED_FOR_DEADLINES = 'UTC'
+TIME_ZONE_DISPLAYED_FOR_DEADLINES = 'US/Pacific'
 
 # Course Forums Download
 COURSE_FORUMS_DOWNLOAD_ROUTING_KEY = HIGH_MEM_QUEUE
