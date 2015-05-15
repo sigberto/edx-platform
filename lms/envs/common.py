@@ -131,7 +131,7 @@ FEATURES = {
     'COURSES_ARE_BROWSABLE': True,
 
     # Enables ability to restrict enrollment in specific courses by the user account login method
-    'RESTRICT_ENROLL_BY_REG_METHOD': False,
+    'RESTRICT_ENROLL_BY_REG_METHOD': True,
 
     # Enables the LMS bulk email feature for course staff
     'ENABLE_INSTRUCTOR_EMAIL': True,
