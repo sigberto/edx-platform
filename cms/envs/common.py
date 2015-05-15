@@ -779,6 +779,14 @@ ADVANCED_COMPONENT_TYPES = [
     'combinedopenended',
     'peergrading',
     'notes',
+    'edx_sga',
+    'ooyala-player',
+    'imagemodal',
+    'google-calendar',
+    'google-document',
+    'submit-and-compare',
+    'poll',
+    'xblockmufi',
 ]
 
 # XBlock types listed here will _always_ be selectable as Studio components
