@@ -162,7 +162,7 @@ FEATURES = {
     'SEGMENT_IO_LMS': False,
 
     # Provide a UI to allow users to submit feedback from the LMS (left-hand help modal)
-    'ENABLE_FEEDBACK_SUBMISSION': False,
+    'ENABLE_FEEDBACK_SUBMISSION': True,
 
     # Provide a UI to allow users to report problems in LMS (left-hand modal)
     'ENABLE_PROBLEM_REPORTING': False,
