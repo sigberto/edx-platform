@@ -238,7 +238,7 @@ FEATURES = {
 
     # Grade calculation and response report requests started from the new instructor dashboard will write
     # CSV files to S3 and give links for downloads.
-    'ENABLE_S3_GRADE_DOWNLOADS': False,
+    'ENABLE_S3_GRADE_DOWNLOADS': True,
 
     # whether to use password policy enforcement or not
     'ENFORCE_PASSWORD_POLICY': True,
