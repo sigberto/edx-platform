@@ -234,7 +234,7 @@ FEATURES = {
 
     # Disable instructor dash buttons for downloading course data
     # when enrollment exceeds this number
-    'MAX_ENROLLMENT_INSTR_BUTTONS': 200,
+    'MAX_ENROLLMENT_INSTR_BUTTONS': 1000,
 
     # Grade calculation and response report requests started from the new instructor dashboard will write
     # CSV files to S3 and give links for downloads.
