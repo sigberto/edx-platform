@@ -152,7 +152,6 @@ class LtiRunTest(TestCase):
         Verifies that the view returns OK if called with the correct context
         """
         request = build_run_request()
-        response = views.lti_run(request)
         render.assert_called_with(request, ALL_PARAMS)
 
     def test_forbidden_if_session_key_missing(self):
