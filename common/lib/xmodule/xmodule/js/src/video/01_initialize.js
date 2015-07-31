@@ -733,7 +733,7 @@ function (VideoPlayer, VideoStorage, i18n) {
         // Will hit the API URL iF YT key is defined in settings.
         if (this.config.ytKey) {
             return $.ajax({
-                url: [this.config.ytTestUrl, '?id=', url, '&part=contentDetails&key=', this.config.ytKey].join(''),
+                url: [this.config.ytMetadataUrl, '?id=', url, '&part=contentDetails&key=', this.config.ytKey].join(''),
                 timeout: this.config.ytTestTimeout,
                 success: _.isFunction(callback) ? callback : null
             });
