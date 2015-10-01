@@ -16,7 +16,7 @@ def log():
             file_descriptor, file_path = tempfile.mkstemp(
                 suffix='.profile',
                 prefix='platform-',
-                dir='/tmp/profiles',
+                dir='/tmp',
             )
             os.close(file_descriptor)
             profile = Profile()
