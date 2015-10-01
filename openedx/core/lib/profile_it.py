@@ -11,6 +11,14 @@ def log(filename=None):
 
     def inner(function):
         def wrapper(*args, **kwargs):
+            if not filename:
+                file_descriptor, file_path = tempfile.mkstemp(
+                    suffix='.profile',
+                    prefix='platform-',
+                    dir='/tmp/profiles',
+                )
+                os.close(file_descriptor)
+                filename = file_path
             profile = Profile()
             return_value = profile.runcall(function, *args, **kwargs)
             filename_output = filename or _filename

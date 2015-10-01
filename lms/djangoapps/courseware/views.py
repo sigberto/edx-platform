@@ -299,7 +299,9 @@ def chat_settings(course, user):
         ),
     }
 
+from openedx.core.lib import profile_it
 
+@profile_it.log()
 @login_required
 @ensure_csrf_cookie
 @cache_control(no_cache=True, no_store=True, must_revalidate=True)
