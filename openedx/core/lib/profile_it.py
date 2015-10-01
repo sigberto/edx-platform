@@ -1,9 +1,10 @@
 """
 Ease performance profiling
 """
-_filename = '/tmp/openedx.profile'
+import os
 
-def log(filename=None):
+
+def log():
     try:
         from cProfile import Profile
     except ImportError:
@@ -11,18 +12,15 @@ def log(filename=None):
 
     def inner(function):
         def wrapper(*args, **kwargs):
-            if not filename:
-                file_descriptor, file_path = tempfile.mkstemp(
-                    suffix='.profile',
-                    prefix='platform-',
-                    dir='/tmp/profiles',
-                )
-                os.close(file_descriptor)
-                filename = file_path
+            file_descriptor, file_path = tempfile.mkstemp(
+                suffix='.profile',
+                prefix='platform-',
+                dir='/tmp/profiles',
+            )
+            os.close(file_descriptor)
             profile = Profile()
             return_value = profile.runcall(function, *args, **kwargs)
-            filename_output = filename or _filename
-            profile.dump_stats(filename_output)
+            profile.dump_stats(file_path)
             return return_value
         return wrapper
     return inner
