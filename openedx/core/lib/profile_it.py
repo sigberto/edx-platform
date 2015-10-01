@@ -2,6 +2,7 @@
 Ease performance profiling
 """
 import os
+import tempfile
 
 
 def log():
