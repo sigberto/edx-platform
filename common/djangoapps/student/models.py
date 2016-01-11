@@ -823,10 +823,13 @@ class CourseEnrollmentManager(models.Manager):
 
     def users_enrolled_in(self, course_id):
         """Return a queryset of User for every user enrolled in the course."""
-        return User.objects.filter(
+        enrolled_users = User.objects.filter(
             courseenrollment__course_id=course_id,
-            courseenrollment__is_active=True
+            courseenrollment__is_active=True,
+            profile__isnull=False,
+            profile__nonregistered=False,
         )
+        return enrolled_users
 
     def enrollment_counts(self, course_id):
         """
