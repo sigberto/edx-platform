@@ -100,7 +100,7 @@ class StudentAccountUpdateTest(UrlResetMixin, TestCase):
             follow=True
         )
         self.assertEqual(response.status_code, 200)
-        self.assertContains(response, "Your password has been changed successfully")
+        self.assertContains(response, "Your password has been set.")
 
         # Log the user out to clear session data
         self.client.logout()
